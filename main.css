@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-black : #3f454d;
+    --color-white: #ffffff;
+    --color-blue: #3b88c3;
+    --color-yellow: #fbbe28;
+    --color-pink : #fd7f84;
+    --color-light-grey: #dfdfdf;
+    --size_btn : 60px;
+}
+
+
+button{
+border : none;
+outline:none;
+cursor:pointer;
+background-color : transparent;
+transition: transform 300ms ease-in;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--color-black);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.shopping_icon{
+    cursor:pointer;
+    transition: transform 300ms ease-in;
+}
+
+.btn:hover,
+.cloth_icon:hover,
+.shopping_icon:hover{
+    transform: scale(1.1);
+}
+
+.cloth_icon{
+    width: var(--size_btn);
+    height: var(--size_btn);
+    margin-right: 8px; 
+    transition: transform 300ms ease-in;
+cursor: pointer;
+}
+
+.btn{
+    font-size: 18px;
+    margin-right: 8px; 
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 300ms ease-in;
+}
+
+.blue{
+    background-color: var(--color-blue);
+}
+
+.yellow{
+    background-color: var(--color-yellow);
+}
+
+.pink{
+    background-color: var(--color-pink);
+    margin-right:0;
+}
+
+
+.list{
+    width: 30%;
+    height: 60%; 
+    overflow-y: auto;
+}
+
+.list::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+li{
+    list-style: none;
+    
+}
+
+
+.item_thumbnail{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.item{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding:10px;
+}
+
+.item_description{
+    font-size: 20px;
+}
+
+ul{
+    padding-left:0;
+}
